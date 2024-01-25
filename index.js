@@ -161,7 +161,44 @@ function fizzBuzz(input){
 
 console.log(fizzBuzz('prachi'))
 
-//Demerit points
+// function to add two numbers
 
+function add_num(num1,num2){
+return num1 + num2;
+}
+
+console.log(add_num(1,2))
+
+// Even and odd numbers 
+function even_odd(num){
+
+for (let i=0;i<=10;i++){
+    // if (i%2 ==0)
+    //     console.log(i,'EVEN')
+    // else
+    //     console.log(i,'ODD')
+
+    // Cleaner and less noisy 
+    const message = (i%2==0) ? 'EVEN' : 'ODD'
+    console.log(i,message)
+}
+
+}
+
+even_odd(10)
+
+// Truthy or Falsy values (0,null, undefined,Nan,'')
+
+count_array = [0,1,2,null,undefined,NaN,'']
+
+function count_truthy(count_array){
+    let count = 0;
+    for (let i of count_array)
+        if(i)
+            count += 1
+        return count
+
+}
+console.log(count_truthy(count_array))
 
 
